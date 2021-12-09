@@ -8,4 +8,5 @@ import (
 func Demos() {
 	httpRequests.Demo()
 	httptestPackage.DemoTestHTTPCalls()
+	httptestPackage.DemoUseTestServer()
 }
