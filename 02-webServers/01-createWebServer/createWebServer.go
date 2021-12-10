@@ -1,11 +1,11 @@
-package main
+package _030201_createWebServer_
 
 import (
 	"fmt"
 	"net/http"
 )
 
-func main() {
+func Demo() {
 	fmt.Println("\n030201 Web Servers: Create Web Server")
 
 	// catch-all
@@ -27,5 +27,5 @@ func main() {
 
 	//http.ListenAndServe(":8080", nil)
 
-	fmt.Println("Uncomment lines 29-31 in `createWebServer.go` to demo this chapter.")
+	fmt.Println("Uncomment line 28 in `createWebServer.go` to demo this chapter.")
 }
