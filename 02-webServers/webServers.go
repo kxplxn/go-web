@@ -5,6 +5,7 @@ import (
 	createFileServer "go-web/02-webServers/02-createFileServer"
 	handlers "go-web/02-webServers/03-handlers"
 	multipleHandlers "go-web/02-webServers/04-multipleHandlers"
+	serveMux "go-web/02-webServers/05-serveMux"
 )
 
 func Demos() {
@@ -12,4 +13,5 @@ func Demos() {
 	createFileServer.Demo()
 	handlers.Demo()
 	multipleHandlers.Demo()
+	serveMux.Demo()
 }
