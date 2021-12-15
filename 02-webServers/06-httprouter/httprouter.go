@@ -7,17 +7,17 @@ import (
 	"net/http"
 )
 
-func HandleName(w http.ResponseWriter, q *http.Request, p httprouter.Params) {
+func HandleName(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 	fmt.Fprintf(w, "Name: %s %s", p.ByName("firstname"), p.ByName("lastname"))
 }
 
 func Demo() {
 	fmt.Println("\n030206 Web Servers: Using httprouter")
 
-	router := httprouter.New()
-	router.GET("/name/:firstname/:lastname", HandleName)
-
+	//router := httprouter.New()
+	//router.GET("/name/:firstname/:lastname", HandleName)
+	//
 	//http.ListenAndServe(":8080", router)
 
-	fmt.Println("Uncomment line 20 in `httprouter.go` to demo this chapter.")
+	fmt.Println("Uncomment line 17-20 in `httprouter.go` to demo this chapter.")
 }

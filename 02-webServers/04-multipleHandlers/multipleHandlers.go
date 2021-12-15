@@ -27,9 +27,9 @@ func (h *CarHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 func Demo() {
 	fmt.Println("\n030204 Web Servers: Working with Multiple Handlers")
 
-	http.Handle("/person", &PersonHandler{"Amos", "Kaplan"})
-	http.Handle("/car", &CarHandler{"Ford", "Fiesta", 2005})
+	//http.Handle("/person", &PersonHandler{"Amos", "Kaplan"})
+	//http.Handle("/car", &CarHandler{"Ford", "Fiesta", 2005})
 	//http.ListenAndServe(":8080", nil)
 
-	fmt.Println("Uncomment line 32 in `multipleHandlers.go` to demo this chapter.")
+	fmt.Println("Uncomment line 30-32 in `multipleHandlers.go` to demo this chapter.")
 }

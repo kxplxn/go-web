@@ -18,9 +18,9 @@ func TestHandlerFunc(w http.ResponseWriter, r *http.Request) {
 func Demo() {
 	fmt.Println("\n030203 Web Servers: Working with Handlers")
 
-	http.Handle("/handler", &TestHandler{})
-	http.HandleFunc("/handlerfunc", TestHandlerFunc)
+	//http.Handle("/handler", &TestHandler{})
+	//http.HandleFunc("/handlerfunc", TestHandlerFunc)
 	//http.ListenAndServe(":8080", nil)
 
-	fmt.Println("Uncomment line 23 in `handlers.go` to demo this chapter.")
+	fmt.Println("Uncomment line 21-23 in `handlers.go` to demo this chapter.")
 }

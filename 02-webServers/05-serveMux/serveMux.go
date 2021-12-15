@@ -21,13 +21,13 @@ func logRequests(h http.Handler) http.Handler {
 func Demo() {
 	fmt.Println("\n030205 Web Servers: Using ServeMux and DefaultServeMux")
 
-	serveMux := http.NewServeMux()
-	serveMux.HandleFunc("/custom/", customHandler)
+	//serveMux := http.NewServeMux()
+	//serveMux.HandleFunc("/custom/", customHandler)
 
 	// wrapping a ServeMux (chaining handlers)
 	//loggedServeMux := logRequests(serveMux)
 
 	//http.ListenAndServe(":8080", loggedServeMux)
 
-	fmt.Println("Uncomment line 28 and 30 in `serveMux.go` to demo this chapter.")
+	fmt.Println("Uncomment line 24-30 in `serveMux.go` to demo this chapter.")
 }
