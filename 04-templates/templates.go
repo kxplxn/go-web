@@ -7,6 +7,7 @@ import (
 	flags "go-web/04-templates/04-flags"
 	variables "go-web/04-templates/05-variables"
 	pipelines "go-web/04-templates/06-pipelines"
+	functions "go-web/04-templates/07-functions"
 )
 
 func Demos() {
@@ -16,4 +17,5 @@ func Demos() {
 	flags.Demo()
 	variables.Demo()
 	pipelines.Demo()
+	functions.Demo()
 }
