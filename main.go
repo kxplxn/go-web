@@ -6,6 +6,7 @@ import (
 	htmlFormsAndResponseWriter "go-web/03-htmlFormsAndResponseWriter"
 	templates "go-web/04-templates"
 	dataStorage "go-web/05-dataStorage"
+	webServices "go-web/06-webServices"
 )
 
 func main() {
@@ -14,4 +15,5 @@ func main() {
 	htmlFormsAndResponseWriter.Demos()
 	templates.Demos()
 	dataStorage.Demos()
+	webServices.Demos()
 }
