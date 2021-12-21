@@ -13,7 +13,7 @@ type Person struct {
 }
 
 func writeBinaryFile(data interface{}, file string) {
-	buf := bytes.Buffer{}
+	var buf bytes.Buffer
 	encoder := gob.NewEncoder(&buf)
 	encoder.Encode(data)
 	ioutil.WriteFile(file, buf.Bytes(), 0600)
@@ -34,7 +34,7 @@ func Demo() {
 	person := Person{"Bob", "Barker"}
 	writeBinaryFile(person, file)
 
-	readPerson := Person{}
+	var readPerson Person
 	readBinaryFile(&readPerson, file)
 
 	fmt.Printf("%+v\n", readPerson)
